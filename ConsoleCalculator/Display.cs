@@ -4,8 +4,20 @@ using System.Text;
 
 namespace ConsoleCalculator
 {
-    class Display
+    public class Display
     {
 
+        string displayString = "";
+        public void ShowOnDisplay()
+        {
+            Console.Clear();
+            Console.WriteLine(displayString);
+        }
+
+        public string AcceptInputOnDisplay(string added)
+        {
+            displayString += added;
+            return displayString;
+        }
     }
 }
